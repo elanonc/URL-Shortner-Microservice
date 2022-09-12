@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 // ----------------------------------
 const { isWebUri } = require('valid-url')
@@ -12,9 +13,6 @@ mongoose.connect(process.env.DB_URI, {
 // ----------------------------------
 const cors = require('cors');
 const app = express();
-
-const dotenv = require("dotenv");
-dotenv.config();
 
 // Basic Configuration
 const port = 3000;
